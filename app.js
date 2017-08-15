@@ -97,7 +97,6 @@ document.getElementById('store4item14').innerHTML = capitolhill.cookiesSold[13];
 document.getElementById('store4item15').innerHTML = capitolhill.dailyCookieSales;
 document.getElementById('store4item16').innerHTML = capitolhill.storeName;
 //Alki
-
 document.getElementById('store5item1').innerHTML = alk.cookiesSold[0];
 document.getElementById('store5item2').innerHTML = alk.cookiesSold[1];
 document.getElementById('store5item3').innerHTML = alk.cookiesSold[2];
@@ -114,3 +113,18 @@ document.getElementById('store5item13').innerHTML = alk.cookiesSold[12];
 document.getElementById('store5item14').innerHTML = alk.cookiesSold[13];
 document.getElementById('store5item15').innerHTML = alk.dailyCookieSales;
 document.getElementById('store5item16').innerHTML = alk.storeName;
+//create header of table.
+var timeSlots = ['', '6am:', '7:am', '8:am', '9:am', '10:am', '11:am', '12:am', '1:pm', '2:pm', '3:pm', '4:pm', '5:pm', '6:pm', '7:pm', 'Total'];
+var createheader = function() {
+  var location = document.getElementById('test');
+  var content = document.createElement('th');
+  content.innerText = timeSlots[0];
+  location.appendChild(content);
+  for(var i = 1; i < 16; i++){
+    var hValues = document.getElementById('test');
+    var inH = document.createElement('td');
+    inH.innerText = timeSlots[i];
+    hValues.appendChild(inH);
+  }
+};
+createheader();
