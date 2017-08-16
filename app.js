@@ -72,12 +72,12 @@ var mainCont2 = function() {
   for(var i = 0; i < 14; i++){
     var hValues = document.getElementById('store2');
     var inH = document.createElement('td');
-    inH.innerText = firstPike.cookiesSold[i];
+    inH.innerText = seaTac.cookiesSold[i];
     hValues.appendChild(inH);
   }
   var compTotal = document.getElementById('store2');
   var dailyGain = document.createElement('td');
-  dailyGain.innerText = firstPike.dailyCookieSales;
+  dailyGain.innerText = seaTac.dailyCookieSales;
   compTotal.appendChild(dailyGain);
 };
 mainCont2();
@@ -90,12 +90,12 @@ var mainCont3 = function() {
   for(var i = 0; i < 14; i++){
     var hValues = document.getElementById('store3');
     var inH = document.createElement('td');
-    inH.innerText = firstPike.cookiesSold[i];
+    inH.innerText = seacenter.cookiesSold[i];
     hValues.appendChild(inH);
   }
   var compTotal = document.getElementById('store3');
   var dailyGain = document.createElement('td');
-  dailyGain.innerText = firstPike.dailyCookieSales;
+  dailyGain.innerText = seacenter.dailyCookieSales;
   compTotal.appendChild(dailyGain);
 };
 mainCont3();
@@ -108,12 +108,12 @@ var mainCont4 = function() {
   for(var i = 0; i < 14; i++){
     var hValues = document.getElementById('store4');
     var inH = document.createElement('td');
-    inH.innerText = firstPike.cookiesSold[i];
+    inH.innerText = capitolhill.cookiesSold[i];
     hValues.appendChild(inH);
   }
   var compTotal = document.getElementById('store4');
   var dailyGain = document.createElement('td');
-  dailyGain.innerText = firstPike.dailyCookieSales;
+  dailyGain.innerText = capitolhill.dailyCookieSales;
   compTotal.appendChild(dailyGain);
 };
 mainCont4();
@@ -126,15 +126,16 @@ var mainCont5 = function() {
   for(var i = 0; i < 14; i++){
     var hValues = document.getElementById('store5');
     var inH = document.createElement('td');
-    inH.innerText = firstPike.cookiesSold[i];
+    inH.innerText = alk.cookiesSold[i];
     hValues.appendChild(inH);
   }
   var compTotal = document.getElementById('store5');
   var dailyGain = document.createElement('td');
-  dailyGain.innerText = firstPike.dailyCookieSales;
+  dailyGain.innerText = alk.dailyCookieSales;
   compTotal.appendChild(dailyGain);
 };
 mainCont5();
+var newStore = document.getElementById('newStore');
 //code to try and condense code above.
 /*var storeNames = ['First and Pike', 'SeaTac Airport', 'Seattle Center', 'Capitol Hill', 'Alki'];
 var idNames = ['store1', 'store2', 'store3', 'store4', 'store5'];
