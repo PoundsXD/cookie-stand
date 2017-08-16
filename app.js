@@ -128,3 +128,22 @@ var createheader = function() {
   }
 };
 createheader();
+//main table content.
+var storeNames = ['First and Pike'];
+var mainCont = function() {
+  var location = document.getElementById('store1');
+  var content = document.createElement('th');
+  content.innerText = storeNames[0];
+  location.appendChild(content);
+  for(var i = 0; i < 14; i++){
+    var hValues = document.getElementById('store1');
+    var inH = document.createElement('td');
+    inH.innerText = firstPike.cookiesSold[i];
+    hValues.appendChild(inH);
+  }
+  var compTotal = document.getElementById('store1');
+  var dailyGain = document.createElement('td');
+  dailyGain.innerText = firstPike.dailyCookieSales;
+  compTotal.appendChild(dailyGain);
+};
+mainCont();
