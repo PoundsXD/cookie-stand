@@ -28,7 +28,6 @@ seaTac.cookieSales();
 seacenter.cookieSales();
 capitolhill.cookieSales();
 alk.cookieSales();
-//First and pike store
 //create header of table.
 var timeSlots = ['', '6am:', '7:am', '8:am', '9:am', '10:am', '11:am', '12:am', '1:pm', '2:pm', '3:pm', '4:pm', '5:pm', '6:pm', '7:pm', 'Total'];
 var createheader = function() {
@@ -135,7 +134,33 @@ var mainCont5 = function() {
   compTotal.appendChild(dailyGain);
 };
 mainCont5();
-var newStore = document.getElementById('newStore');
+/*var mainCont6 = function() {
+  var location = document.getElementById('store5');
+  var content = document.createElement('th');
+  content.innerText = storeNames[4];
+  location.appendChild(content);
+  for(var i = 0; i < 14; i++){
+    var hValues = document.getElementById('store5');
+    var inH = document.createElement('td');
+    inH.innerText = alk.cookiesSold[i];
+    hValues.appendChild(inH);
+  }
+  var compTotal = document.getElementById('store5');
+  var dailyGain = document.createElement('td');
+  dailyGain.innerText = alk.dailyCookieSales;
+  compTotal.appendChild(dailyGain);
+};
+mainCont6();*/
+function getNewStore(event) {
+  event.preventDefault();
+  var newStore = new store();
+  newStore.storeName = this.elements['storeName'].value;
+  newStore.storeName = this.elements['minCust'].value;
+  newStore.storeName = this.elements['maxCust'].value;
+  newStore.storeName = this.elements['avgCookie'].value;
+  newStore.store();
+}
+newStore.addEventListener('submit', getNewStore);
 //code to try and condense code above.
 /*var storeNames = ['First and Pike', 'SeaTac Airport', 'Seattle Center', 'Capitol Hill', 'Alki'];
 var idNames = ['store1', 'store2', 'store3', 'store4', 'store5'];
