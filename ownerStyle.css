@@ -1,5 +1,18 @@
-table, tr, td {
+able, tr, td {
   border: 2px solid black;
   width:50%;
   border-collapse: collapse;
+}
+#data {
+  border: 2px solid black;
+  margin-left:25%;
+  margin-right:25%;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+#newStore {
+  margin-left:25%;
+  margin-right:25%;
+  width:50%
+  border-collapse:collapse;
 }
