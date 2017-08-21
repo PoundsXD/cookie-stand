@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Owner page.</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="ownerStyle.css" type="text/css"/>
+    </head>
+    <body>
+      <table id="data">
+      </table>
+        <form id="newStore">
+          <table>
+            <tr>
+              <td><label for="storeName">Store name:</label></td>
+              <td><input type="text" name="storeName" class="storePost" placeholder="Input store name." required></td>
+            </tr>
+            <tr>
+              <td><label for="minCust">Minimum customers:</label></td>
+              <td><input type="number" name="minCust" class="storePost" placeholder="Input min customer value." required></td>
+            </tr>
+            <tr>
+              <td><label for="maxCust">Maximum customers:</label></td>
+              <td><input type="number" name="maxCust" class="storePost" placeholder="Input max customer value." required></td>
+            </tr>
+            <tr>
+              <td><label for="avgCookie">Projected average cookies sold to one customer:</label></td>
+              <td><input type="number" name="avgCookie" class="storePost" placeholder="Input average cookies." step="0.1"required></td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <input type="submit" value="Create New Store." id="submit"/>
+            </tr>
+          </table>
+        </form>
+    </body>
+    <script src="app.js">
+    </script>
+  </html>

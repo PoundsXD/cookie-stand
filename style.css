@@ -1,0 +1,23 @@
+.description {
+  color: tan;
+  text-align: center;
+}
+.mainBan {
+  color: white;
+  text-align: center;
+}
+.locations {
+  color: blue;
+}
+.locationContainer {
+  text-align: center;
+  color: white;
+}
+.salmon {
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+.background {
+  background-color: black;
+}
